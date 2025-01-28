@@ -1,3 +1,11 @@
+-- Verifica se o jogo é o Blox Fruits
+if game.PlaceId ~= 2753915549 then
+    print("Este script só funciona no Blox Fruits!")
+    return
+end
+
+print("Blox Fruits detectado! Executando o script...")
+
 -- Aguarda até que o jogo e o jogador estejam carregados
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
